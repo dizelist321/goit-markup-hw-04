@@ -203,6 +203,7 @@ header .container {
 .main-icons-items:not(:last-child) {
     margin-right: 30px;
 }
+
 .main-icons-link {
     width: 100%;
     height: 100%;
@@ -210,8 +211,14 @@ header .container {
     background-color: #F5F4FA;
     justify-content: center;
     align-items: center;
+    border: 1px solid #F5F4FA;
+    border-radius: 4px;
 }
-
+.main-icons-link:hover,
+.main-icons-link:focus {
+    fill: #2196F3;
+    border-color: #2196F3;
+}
 .main-list {
     display: flex;
     justify-content: space-between;
@@ -326,6 +333,7 @@ header .container {
     justify-content: center;
     align-items: center;
 }
+.team-soc-link:focus,
 .team-soc-link:hover {
     fill: #FFFFFF;
     background-color: #2196F3;
@@ -345,8 +353,6 @@ header .container {
 .customers-items {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 .customers-items:not(:last-child) {
     margin-right: 30px;
@@ -359,8 +365,13 @@ header .container {
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
-.customers-link:hover, .customers-items:hover {
+.customers-link:focus,
+.customers-items:focus,
+.customers-link:hover,
+.customers-items:hover {
     fill: #2196F3;
     border-color: #2196F3;
 }
@@ -439,6 +450,7 @@ header .container {
     justify-content: center;
     align-items: center;
 }
+.find-us-link:focus,
 .find-us-link:hover {
     fill: #FFFFFF;
     background-color: #2196F3;
@@ -517,6 +529,7 @@ header .container {
     color: #FFFFFF;
     background-color: #2196F3;
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
     display: flex;
@@ -532,7 +545,10 @@ header .container {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     width: 370px;
-
+}
+.portfolio-link:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-items {
    padding: 20px 24px;
